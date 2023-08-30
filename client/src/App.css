@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  @apply m-0 p-0 box-border bg-primary-50 text-slate-600;
+}
+
+.active{
+  border-bottom: 1px solid azure;
+  color:azure;
+  font-weight: bolder;
+}
+
+.sidebar-item{
+@apply px-4 py-2 text-white rounded-md flex items-center;
+@apply  my-2 hover:bg-white hover:text-primary-900;
+@apply text-sm;
+}
+
+#sidebar a.active{
+@apply bg-white text-primary-900;
+}
+
+.nav2 {
+@apply flex px-10 justify-between py-3 text-sm text-primary-900 ;
+}
+
+#nav2 a.active{
+@apply text-xs text-primary-900 border border-primary-200 px-4 py-2 rounded;
+}
+
+.card {
+  @apply w-full max-w-md bg-white border border-gray-200 rounded-lg;
+}
+
+.card-header{
+  @apply bg-slate-100 py-5 px-2 text-xl font-medium text-primary-900;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.form-group{
+@apply mb-4 }
+
+.form-label{
+  @apply block mb-2 text-sm text-slate-700 font-body;
+}
+
+.btn{
+@apply bg-primary-800 text-white rounded-md px-10 py-2 border border-transparent;
+@apply hover:bg-primary-700 rounded-full;
+}
+
+.btn-outlined{
+@apply border border-primary-400 text-primary-900 rounded-md px-10 py-2;
+@apply hover:bg-primary-700 hover:text-white rounded-full;
+}
+
+/* form-control style */
+.form-control {
+  @apply bg-gray-50 border border-gray-300;
+  @apply text-gray-900 text-sm rounded-lg ;
+  @apply block w-full p-2.5 focus:border-blue-400;
+}
+
+.form-control-file{
+@apply block w-full text-sm text-slate-500;
+@apply file:mr-4 file:py-2 file:px-4;
+@apply file:rounded-md file:border-0;
+@apply file:text-sm file:font-semibold;
+@apply file:bg-violet-50 file:text-teal-500;
+@apply hover:file:bg-violet-100;
+@apply border rounded-md p-1}
+
+/* form-text style */
+.form-text {
+  display: block;
+  margin-top: .25rem;
+}
+
+.error{
+@apply text-xs text-red-500 mt-1 ;
+}
+
+/* form-check style */
+.form-check {
+  @apply flex justify-center mb-2;
+}
+
+/* form-check-input style */
+.form-check-input {
+  @apply w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300;
+}
+
+/* form-check-label style */
+.form-check-label {
+  @apply ml-2 text-sm font-medium text-primary-900 dark:text-gray-300;
+}
+
+.details-list {
+  list-style-type: circle;
+  @apply text-start;
+}
+
+::-webkit-inner-spin-button { 
+  display:none;
+}
+::-webkit-calendar-picker-indicator { background-color:white}
+input[type=date]{
+  color: "gray";
+}
+::-webkit-datetime-edit-text { color:#555555}
+::-webkit-datetime-edit-month-field { color:#555555 }
+::-webkit-datetime-edit-day-field { color: #555555; }
+::-webkit-datetime-edit-year-field { color:#555555; }
+::-webkit-calendar-picker-indicator{ 
+  background-image: url("./assets/Calendar-icon.png");
+      background-position:center;
+       background-size:20px 20px;
+       background-repeat:no-repeat;
+      color:rgba(204,204,204,0);
+}
+
+/* Show the input placeholder text using the ::before pseudo-element by default */
+input[type^="date"]::before {
+  content: attr(data-placeholder);
+  width: 100%;
+  color: gray;
+}
+
+/* Hide the placeholder text when in focus or when valid */
+input[type^="date"]:focus::before,
+input[type^="date"]:valid::before {
+  display: none;
+}
+
+.news ul li{
+  list-style-type: circle;
+}
+
+.tax-rates ul li {
+  list-style-type: disc;
+  @apply ml-2
+}
+
+.news-feed img{
+  @apply h-24
+
+}
+
+.news-feed a{
+  @apply underline text-orange-500 mb-2
+}
+
+.news-feed p{
+  @apply w-4/5
+}
+
+.paybills .container{
+  @apply rounded p-8 bg-primary-900 text-white 
+}
+
+.paybills h2{
+  @apply font-bold text-lg mb-4
+}
+
+.paybills li{
+  list-style-type: disc;
+  @apply ml-4
+}
+
+.paybills h3{
+  @apply font-semibold mt-4 
+}
