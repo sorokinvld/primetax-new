@@ -124,8 +124,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
-EMAIL_HOST_USER = '3f0f1f4714b995'
-EMAIL_HOST_PASSWORD = 'f72fa6c75b1747'
+EMAIL_HOST_USER = 'fbf913b2ec9075'
+EMAIL_HOST_PASSWORD = 'b33ee19add8894'
 EMAIL_PORT = '2525'
 DEFAULT_FROM_EMAIL = "PrimeTax@mainltrap.io"
 
